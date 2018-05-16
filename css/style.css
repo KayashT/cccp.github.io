@@ -620,7 +620,7 @@ main {
 #slider_box>ul>li {
     float: left;
     display: block;
-	width: 2.5%;
+	width: 2.5% !important;
 }
 #slider_box>ul {
     overflow: hidden;
