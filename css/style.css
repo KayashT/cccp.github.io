@@ -521,7 +521,7 @@ main {
 .carousel-inner .teacher-item {
     position: relative;
     width: 25%;
-    height: 500px;
+    height: 450px;
     color: #fff;
     float: left;
     overflow: hidden;
@@ -692,6 +692,12 @@ main {
 .border {
 	border: none;
 	  padding-right: 10px;
+  }
+  #slider_box>ul>li {
+	width: 5% !important;
+}
+  .teacher-item {
+	  height: 550px;
   }
   .header-menu {
   margin-top: 50px;
