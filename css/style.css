@@ -585,48 +585,12 @@ main {
 .mobil {
 	display: none;
 }
-@media (min-width: 1080px) {
+@media (min-width: 1200px) {
   .container {
     width: 75%;
   }
 }
-@media (max-width: 1280px) {
-  .border {
-	  padding-right: 15px;
-  }
-  .header-menu ul li {
-	  margin-left: 15px;
-  }
-  .age {
-	  width: 9%;
-  }
-}
-@media (max-width: 1080px) {
-  .container {
-    width: 78%;
-  }
-  .about p, .about h1 {
-	width: 750px;
-}  
-    .header-logo {
-	width: 170px;
-    height: 85px;
-  }
-    main {
-    margin-top: 84px;
-}
-.border {
-	border: none;
-	  padding-right: 10px;
-  }
-  .header-menu {
-  margin-top: 50px;
-  }
-  .header-menu ul li {
-	  margin-left: 10px;
-  }
-}
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .container {
     width: 83%;
   }
