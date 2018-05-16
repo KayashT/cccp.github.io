@@ -675,40 +675,15 @@ main {
 	  width: 9%;
   }
 }
-@media (max-width: 1080px) {
-  .container {
-    width: 78%;
-  }
-  .about p, .about h1 {
-	width: 750px;
-}  
-    .header-logo {
-	width: 170px;
-    height: 85px;
-  }
-    main {
-    margin-top: 84px;
-}
-.border {
-	border: none;
-	  padding-right: 10px;
-  }
+@media (max-width: 1050px) {
   #slider_box>ul>li {
 	width: 5% !important;
 }
   .teacher-item {
 	  height: 550px;
   }
-  .header-menu {
-  margin-top: 50px;
-  }
-  .header-menu ul li {
-	  margin-left: 10px;
-  }
-}
-@media (max-width: 900px) {
   .container {
-    width: 83%;
+    width: 80%;
   }
   main {
     margin-top: 79px;
@@ -724,7 +699,7 @@ main {
   .header-menu ul li {
     display: block;
 	text-align: center;
-	padding: 6px 0;
+	padding: 9px 0;
 	margin: 0;
   }
   .header-menu {
@@ -773,14 +748,11 @@ main {
 		width: 100%;
 	}
 	h1 {
-		font-size: 24px;
+		font-size: 26px;
 	}
 	.about p {
 		font-size: 16px;
 		margin-top: 0px;
-	}
-	p {
-		font-size: 14px;
 	}
   .spisok, .curses {
 	  display: block;
