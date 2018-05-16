@@ -1510,7 +1510,7 @@ $('.multiple-items').slick({
 		</section>
 		<script src="/js/scripts.js"></script>           
 <script>
-function Slider(margin_right_li,col_view_img){
+function Slider(width_li,margin_right_li,col_view_img){
             var step=width_li+margin_right_li,
                 slider_box_with=col_view_img*step-margin_right_li,
                 $col_img=$("#slider_box>ul>li").length,
@@ -1535,7 +1535,7 @@ function Slider(margin_right_li,col_view_img){
                 $("#slider_box>ul").css("margin-left",col_main_left+"px");
             });
         }
-        $(Slider(0,4));
+        $(Slider(260,0,4));
 $(function(){ 
 		$(".menu-icon").click(function(){
 		$(".header-menu ul").slideToggle(500);
