@@ -16,7 +16,7 @@ body {
 	color: #282828;
 }
 p {
-	font-size: 14px;
+	font-size: 16px;
 	margin: 0 0 10px;
 }
 img {
@@ -101,6 +101,9 @@ h2 {
     font-family: 'Verdana';
 	font-weight: bold;
 }
+.photo h2 {
+	text-align: center;
+}
 main {
     margin-top: 99px;
 }
@@ -112,6 +115,9 @@ main {
 .news h1, .photo h1 {
 	margin: 0;
 }
+.news h1 {
+	font-size: 28px;
+}
 .about {
     position: relative;
     padding: 50px 0;
@@ -122,18 +128,15 @@ main {
     color: #fff;
     z-index: 2;
 }
-.about p, .about h1 {
-	width: 800px;
+.about p, .about h1, .news h1, .news p {
+	width: 760px;
+    color: #fff;
 }
 .about p {
 	font-size: 18px;
 }
 .news {
 	font-size: 14px;
-}
-.news h1,
-.about h1 {
-    color: #fff;
 }
 .about:after {
     content: '';
@@ -162,16 +165,23 @@ main {
 }
 .n1, .n2, .n3 {
 	text-align: center;
+	-webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
-.courses ul {
+.courses ul, .questions ul, .konts ul {
     list-style-image: url(img/blue.png);
+}
+.courses ul li ul, .questions ul li ul, .konts ul li ul {
+    list-style-image: url(img/black.png);
 }
 .ages {
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	font-size: 0;
 }
 .ages h1,
+.sets h1,
 .prices h1,
 .photo h1,
 .works h1 {
@@ -211,21 +221,20 @@ main {
 	color: white;
 }
 .mal {
-	 transform: scale(0, 0);
+	 opacity: 0.3;
 }
 .num {
 	width: 30px;
 	height: 26px;
 	display: inline-block;
 	text-align: center;
-	vertical-align: middle;
 	background: rgb(40, 125, 155);
 	color: white;
 	font-weight: bold;
-	padding-top: 4px;
+	padding-top: 3px;
 }
 .price {
-	margin: 0 0 5px 8%;
+	margin: 5px 0;
 	vertical-align: middle;
 }
 .price p {
@@ -277,6 +286,9 @@ main {
 	margin-left: 2%;
 	margin-right: 5%;
 	vertical-align:middle;
+	-webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 .strela::after {
     content: ''; 
@@ -355,9 +367,11 @@ main {
 #BV, #BS, #BM, #D, #M, #N, #P, #H, #GM, #W, #C, #V, #GS, #CS, #R {
 	display: none;
 	background: rgba(40, 125, 155, 0.2);
-	padding: 8px;
-	padding-top: 0;
+	padding: 0 10px 5px;
 	margin-top: 0;
+}
+#l1 p, #l2 p, #l3 p {
+	font-size: 14px;
 }
 .q0:hover {
 	cursor: pointer;
@@ -413,12 +427,68 @@ main {
 	color: #fff;
 	background: rgb(40, 40, 40);
 }
+.sets {
+	text-align: center;
+}
+.set {
+	display: inline-block;
+	margin: 5px 10px 0;
+	padding: 0 8px;
+	font-size: 14px;
+	-webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+	vertical-align: top;
+	text-align: center;
+}
+.png {
+	width: 60px;
+	height: 60px;
+	margin: 0 auto;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	vertical-align: middle;
+	display: inline-block;
+}
+.graphic {
+	background: rgb(40, 125, 155) url(img/graphic.png) no-repeat;
+	background-size: contain;
+}
+.prog {
+	background: rgb(40, 125, 155) url(img/prog.png) no-repeat;
+	background-size: contain;
+}
+.int {
+	background: rgb(40, 125, 155) url(img/int.png) no-repeat;
+	background-size: contain;
+}
+.all{
+	background: rgb(40, 125, 155) url(img/all.png) no-repeat;
+	background-size: contain;
+}
+.set p {
+	margin-top: 9px;
+	vertical-align: middle;
+}
+.set:hover {
+	background: rgb(40, 125, 155);
+	cursor: pointer;
+	color: white;
+}
 .questions .default-button {
 	float: none;
 }
-.questions h1 {
+.questions h1,
+.prices h1, .konts h1 {
 	font-size: 28px;
-	margin: 35px 0 10px;
+	margin: 20px 0 0;
+}
+.questions div div, .konts, .photo p {
+	width: 700px;
+}
+.photo p {
+	margin: 0 auto;
 }
 .question {
 	color: rgb(40, 125, 155);
@@ -440,7 +510,6 @@ main {
 	color: white;
 }
 .work {
-	text-align: center;
 	padding-bottom: 10px;
 }
 .one {
@@ -454,6 +523,7 @@ main {
 .by {
 	display: inline-block;
 	width: 400px;
+	vertical-align: top;
 }
 .triv {
     -moz-transform: rotate(90deg); 
@@ -468,17 +538,22 @@ main {
 .teachers h1, .photo h1, .contacts h1 {
     padding-top: 20px;
 }
-.prices h1,
+.sets h1,
 .teachers h1,
-.works h1,
 .photo h1,
 .contacts h1 {
     text-align: center;
 }
 .imgs {
-	width: 900px;
+	width: 850px;
 	margin-bottom: 20px;
 }
+ #photo1 {
+	  margin: 0 auto;
+ }
+ #ph1 {
+	 margin: 0 auto;
+ }
 .nol {
 	font-size: 0;
 	display: inline;
@@ -546,20 +621,20 @@ main {
 }
 .container {
   margin: 0 auto;
-  width: 75%;
+  width: 960px;
 }
 .map {
 	display: inline-block;
-	width: 40%;
+	width: 45%;
 	height: 400px;
 	vertical-align: top;
 }
 .cont {
 	display: inline-block;
-	width: 46%;
+	width: 50%;
 	float: right;
 	vertical-align: top;
-	margin-right: 50px;
+	margin-left: 35px;
 }
 .icon {
 	width: 30px;
@@ -567,6 +642,7 @@ main {
 }
 .contacts {
 	padding-bottom: 120px;
+	min-height: 100%;
 }
 .footer {
 	background: rgb(40, 125, 155);
@@ -583,8 +659,8 @@ main {
 	text-align: right;
 	display: none;
 }
-.mobil {
-	display: none;
+.sets {
+	vertical-align: top;
 }
 #slider * {
 	-webkit-transition: all 0.5s ease;
@@ -607,7 +683,7 @@ main {
 }
 .teacher-title {
     line-height: 100%;
-    font-size: 26px;
+    font-size: 24px;
 	font-weight: Bold;
 	padding-top: 5px;
 }
@@ -615,7 +691,7 @@ main {
     position: absolute;
     left: 20px;
     line-height: 24px;
-    font-size: 16px;
+    font-size: 18px;
 }
 #slider_box>ul>li {
     float: left;
@@ -674,6 +750,9 @@ main {
   .age {
 	  width: 9%;
   }
+  .container {
+    width: 77%;
+  }
 }
 @media (max-width: 1050px) {
   #slider_box>ul>li {
@@ -715,27 +794,12 @@ main {
     z-index: 1000;
     overflow: auto;
   }
-  .screen {
-	  display: none;
-  }
-  .mobil {
-	  display: block;
-  }
-  .mobil h1 {
-	  text-align: left;
-  }
-  .mobil>.price {
-	  margin-left: 0;
-  }
   .curses h1 {
 	  margin:0;
   }
-  .ages {
-	  margin-bottom: 10px;
-  }
 	.border {
 		border-right: none;
-		border-bottom: 0.5px solid rgba(255,255,255,0.3);
+		border-bottom: 0.5px solid rgba(255,255,255,0.4);
 		padding-right: 0;
 	 }
 	.menu-icon {
@@ -745,7 +809,7 @@ main {
 	.about {
 		padding-top: 1px;
 	}
-	.about p, .about h1 {
+	.about p, .about h1, .news h1, .news p {
 		width: 100%;
 	}
 	h1 {
@@ -763,4 +827,24 @@ main {
   .age {
 	  width: 40px;
   }
+  .imgs {
+	  display: none;
+  }
+  .map {
+	display: block;
+	width: 100%;
+	height: 400px;
+}
+	.cont {
+	display: block;
+	width: 100%;
+	}
+	.footer {
+		margin-top: 365px;
+	}
+}
+@media (max-width: 800px) {
+	.questions div div {
+		width: 100%;
+	}
 }
